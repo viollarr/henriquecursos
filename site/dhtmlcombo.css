@@ -1,0 +1,61 @@
+.dhtmlselect{ /*style of DHTML Select Menu, main box */
+width: 160px; /*default  width of main box */
+border: 2px solid #0000CC;
+position: relative;
+text-indent: 3px;
+padding: 1px 0;
+cursor: hand;
+cursor: pointer;
+font: bold 10px "Arial", Verdana, Helvetica, sans-serif, Times, serif;
+color:#0000FF;
+background-color:#FFFF00;
+}
+
+.dhtmlselect .downimage{ /*style of "down" image to the right of the DHTML Select Menu*/
+position: absolute;
+right: -25px;
+color:#0000FF;
+background-color:#FFFF00;
+
+}
+
+.dhtmlselect .dropdown{ /*style of Drop Down Menu that appears onMouseover */
+position: absolute;
+margin-top: -187px; /* usado para colocar o conteudo para cima*/
+left: 160px; /* usado para distanciar da margem a esquerda o conteudo*/
+width: 550px; /*default width of drop down menu*/
+height: auto; /*usado para aumentar o tamanho do menu cursos. */
+border: 2px solid #0000CC;
+border-bottom-width: 0;
+font: bold 10px "Arial", Verdana, Helvetica, sans-serif, Times, serif;
+display: none;
+z-index: 5;
+font-weight: normal;
+color:#0000FF;
+background-color:#FFFF00;
+
+}
+
+.dhtmlselect .dropdown a{ /*style of Drop Down Menu's links */
+width: auto;
+display: block;
+border-bottom: 2px solid #0000CC;
+padding: 1px 0;
+font: bold 10px "Arial", Verdana, Helvetica, sans-serif, Times, serif;
+text-indent: 5px;
+text-decoration: none;
+color:#0000FF;
+background-color:#FFFF00;
+width: 50%;
+float: left;
+
+}
+
+* html .dhtmlselect .dropdown a{ /*IE 6 (and below) hack */
+width: 100%;
+}
+
+.dhtmlselect .dropdown a:hover{
+background: #FFFF00;
+color:#FF0000;
+}

@@ -1,0 +1,188 @@
+28/01/2003 - Matt Wilson <matt@mattsscripts.co.uk>
+	* Addeed another set of options, revokation and better GRANT support
+
+27/01/2003 - Matt Wilson <matt@mattsscripts.co.uk>
+	* Added the option to delete users
+
+15/01/2003 - Matt Wilson <matt@mattsscripts.co.uk>
+	* Many changes, but here's 1.0.0
+
+01/12/2002 - Matt Wilson <matt@mattsscripts.co.uk>
+	* Import data fix
+
+28/11/2002 - Matt Wilson <matt@mattsscripts.co.uk>
+	* Added a Polish translation from gwarant <mariusz@gwarant.net>
+
+22/11/2002 - Matt Wilson <matt@mattsscripts.co.uk>
+	* Dump data code f**cked, fixed now :)
+	* Misc. changes and fixes
+	* More data import fixes
+
+07/11/2002 - Matt Wilson <matt@mattsscripts.co.uk>
+	* Fixed a table browsing (and hence querying) problem where one row less
+	  than full was shown
+
+01/11/2002 - Matt Wilson <matt@mattsscripts.co.uk>
+	* Fixed a bug in the dump SQL system
+	* Added a Portuguese language translation
+
+30/09/2002 - Matt Wilson <matt@mattsscripts.co.uk>
+	* Several more changes to repair bug fixes related to
+	  "register_globals=no"
+
+30/08/2002 - Matt Wilson <matt@mattsscripts.co.uk>
+	* Re-wrote several areas of the script which went wrong when changing
+	  for "register_globals=no"
+
+08/08/2002 - Matt Wilson <matt@mattsscripts.co.uk>
+	* CSV file importing is in place!
+
+07/08/2002 - Matt Wilson <matt@mattsscripts.co.uk>
+	* added a javascript function "my_back()" because IE (and possibly some
+	  other browsers?) don't recognise "back()" as a javascript function
+	  (they appear to use history(-1) instead)
+	* RC2 time! it's 23:05 on Wednesday, 7th August, 2002
+
+06/08/2002 - Matt Wilson <matt@mattsscripts.co.uk>
+	* several changes, most noticably my own is_null function for
+	  interpreteurs without it
+
+03/08/2002 - Matt Wilson <matt@mattsscripts.co.uk>
+	* added database management page for adding, deleting and granting on
+	  databases etc
+	* finddb.php renamed to dbmanager.php and changed into a database
+	  manager (suprisingly!), also no longer auto-forwards user to database
+	  main page if only one database is available to them.
+
+01/08/2002 - Matt Wilson <matt@mattsscripts.co.uk>
+	* development is reaching a v1.0.0 Release Candidate stage, considering
+	  releasing v1.0.0 RC1
+
+30/07/2002 - Matt Wilson <matt@mattsscripts.co.uk>
+	* new logo! thanks to Germán Alonso for this - new colours for the
+	  script needed!
+	* finddb.php only shows databases that the user has access to, if user
+	  only has access to one database then they are automatically
+	  redirected to the main page with that database selected
+	* drop down menu on main screen does the same as finddb.php
+	* quick README with Installation and Configuration guidelines.
+
+29/07/2002 - Matt Wilson <matt@mattsscripts.co.uk>
+	* ability to change current database or table quickly via drop down menu
+	* option to bypass login screen and always login as same user (useful
+	  for htacces w/secure connections)
+
+25/07/2002 - Matt Wilson <matt@mattsscripts.co.uk>
+	* added ability to export single tables in CSV format
+	* "browse" option for tables
+	* fixed a few language problems
+
+24/07/2002 - Matt Wilson <matt@mattsscripts.co.uk>
+	* received spanish (castellano) translation from Germán Alonso, although
+	  several updates have occured so new version needed :)
+
+21/07/2002 - Matt Wilson <matt@mattsscripts.co.uk>
+	* it APPEARS that the SQL import and export functions are working
+	  perfectly! I spent a good length of time re-writing them and testing
+	  them and it all appears to work!
+
+17/07/2002 - Matt Wilson <matt@mattsscripts.co.uk>
+	* the script's HTML is now fully 4.01 standard
+	* several other fixes and general clean ups
+	* bug fix relating to choosing a database in finddb.php
+	* written in support for multi-languages, awaiting spanish translation
+	  prior to release from Germán Alonso
+
+10/06/2002 - Matt Wilson <matt@mattsscripts.co.uk>
+	* a couple of javascript related fixes
+
+15/04/2002 - Matt Wilson <matt@mattsscripts.co.uk>
+	* a few small bug fixes
+
+10/03/2002 - Matt Wilson <matt@mattsscripts.co.uk>
+	* re-wrote the SQL importing code (again) to try and make it useful
+	  again...
+	* updated the HTML, fixing lot's of HTML nasties and using stylesheets
+	  more (HTML4)
+	* updated the SQL dumping code to tell the browser to save the file
+	  rather than display it
+
+23/07/2001 - Matt Wilson <matt@mattsscripts.co.uk>
+	* Fixed some problems with this script and Netscape 4.x (missing
+	  </td></tr></table> :P)
+
+04/07/2001 - Matt Wilson <matt@mattsscripts.co.uk>
+	* Made some changes to the $referer stuff as some servers were not
+	  providing necessary variables within PHP (anyone want to comment?)
+	* Some more changes to the import code (thanks for the thoughts Kasper)
+
+27/06/2001 - Matt Wilson <matt@mattsscripts.co.uk>
+	* wrote some code to manage importing of SQL files
+	  (ala mysql -u ... < [filename]) because the old method didn't work
+	  when safe mode was turned on
+	* fixed a little problem with uploading of files for importing
+
+08/06/2001 - Matt Wilson <matt@mattsscripts.co.uk>
+	* fixed a typo w/adding new fields (which nobody reported!)
+
+29/05/2001 - Matt Wilson <matt@mattsscripts.co.uk>
+	* add some other stuff, fixed a few problems etc and added a key
+	  management system
+
+23/05/2001 - Matt Wilson <matt@mattsscripts.co.uk>
+	* fixed record modifying/deleting when no primary key is present within
+	  a table, of course, this can product unpredicatable results, but it
+	  works.
+	* altered the data dumper to manage keys properly, well, hopefully ;).
+
+21/05/2001 - Matt Wilson <matt@mattsscripts.co.uk>
+	* added native "mysqldump" support so it no longer needs to be executed
+	  on the server (causing a few problems)
+	* added a different method for executing manual SQL queries, so no need
+	  to call the mysql client on the server (same problems as above)
+
+17/05/2001 - Matt Wilson <matt@mattsscripts.co.uk>
+	* added ability to rename fields
+	* made default value part of type field
+
+16/05/2001 - Matt Wilson <matt@mattsscripts.co.uk>
+	* code clean up and commenting
+	* _loads_ of changes, updates, fixes etc not been keeping up with the
+	  listing
+
+14/05/2001 - Matt Wilson <matt@mattsscripts.co.uk>
+	* added more functionality to "Add field" section
+
+13/05/2001 - Matt Wilson <matt@mattsscripts.co.uk>
+	* trying to fix up the script to a "stable" point, working on all
+	  aspects of the scripts.
+
+10/05/2001 - Matt Wilson <matt@mattsscripts.co.uk>
+	* i've been really busy recently and haven't had time to do what I would
+	  have liked to, but heres another bug fix and i'm working on getting
+	  the script fully functional.
+
+05/03/2001 - Matt Wilson <matt@mattsscripts.co.uk>
+	* translations are going to be done by the following people (so far);
+		French - Jane Whittaker <jahane@mattsscripts.co.uk>
+		Portuguese - Alvaro Carneiro <alvaro@advicenet.com.br>
+		German - Rene Bogislawski <contact@seibo-media.de>
+
+04/03/2001 - Matt Wilson <matt@mattsscripts.co.uk>
+	* implementing multi-language support for (at least) portuguese, french,
+	  spanish and german.
+	* hopefully going to re-design the scripts with some new layouts and
+	  stuff as the current javascript/popup layout is something i'm not
+	  too fond of, I may go for a frames based layout, which I don't like
+	  either, but it would be hopefully more functional. Also all images
+	  are going to have to be scrapped due to the multi-language support
+	  being implemented, all images are going to have to be plain old links.
+
+09/10/2000 - Matt Wilson <matt@mattsscripts.co.uk>
+	* added query of table data
+	* added the option to connect to foreign hosts
+	* added the option to search the databases on the server for the one you
+	  want
+
+05/10/2000 - Matt Wilson <matt@mattsscripts.co.uk>
+	* first public release

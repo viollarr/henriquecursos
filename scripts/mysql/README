@@ -1,0 +1,118 @@
+Matt's MySQL Panel
+------------------
+
+Table of Contents
+-----------------
+
+1. Introduction & History
+2. Installation
+3. Configuration
+4. Usage & Help
+5. Credits
+6. Acknowledgements
+7. License
+
+Introduction & History
+----------------------
+
+Welcome to Matt's MySQL Panel, a user orientated web base MySQL database
+administration script written by Matt Wilson <matt@mattsscripts.co.uk> and
+lives at http://www.mattsscripts.co.uk/mpanel.htm (probably where you got this
+archive from).
+
+MPanel was started in October 2000 by Matt Wilson to and has been an up and
+down project most of the way as with most Open Source Projects. Hopefully one
+day it'll gain the all important "version 1.0".
+
+Almost all (if not all) of the programming for this project was done by Matt
+Wilson <matt@mattsscripts.co.uk> althought several other people have
+contributed in one way or another (see 6. Acknowledgements).
+
+2. Installation
+---------------
+
+For a quick installation simply upload MPanel onto a PHP enabled web server
+and access the index page (ie http://domain.com/mpanel/) to be presented with
+a user login page. This will then take you through to the choose database page
+or alternatively the main database page (depending on user database access).
+Some configuration options can also be specified...
+
+3. Configuration
+----------------
+
+Configuration of the script is all done in the file "config.php". There are a
+few configuration options, they are;
+
+$use_language
+
+This specified the language file to use, it defaults to "english" although the
+other language files are available in the "lang/" directory. Simply replace the
+value with the name of a file without the ".php" extension (e.g. english.php
+is used by entering "english" for this value, castellano.php is used by
+entering "castellano").
+
+$use_login
+
+Specifies whether or not to present the user with the login screen. This is the
+default method of operation. If set to "false" and the $db_* values below are
+also set then the user will automatically be forwarded to the "choose database"
+page of the script. This option is most useful when used in conjuntion with a
+.htaccess and .htpasswd file to secure the MPanel directory over a secure
+internet connection such as SSL as the user's machine has no need to store,
+send or receive the unencrypted cookies that MPanel uses for "remembering" the
+authentication details of users.
+
+$db_username
+$db_password
+$db_hostname
+
+When $use_login is set to "false", the script automatically logs into the
+database server and presents the user with the usual page(s), beginning with
+the choose database page. These values are the username, password and hostname
+(respectively) with which to connect to the database server.
+
+4. Usage & Help
+---------------
+
+For help using the script I direct you to the appropriate "Help page" within
+the scripts pages.
+
+5. Credits
+----------
+
+MPanel was written entirely by Matt Wilson <matt@mattsscripts.co.uk>, all
+questions, suggestions or letters of praise should be directed to him.
+
+6. Acknowledgements
+-------------------
+
+Thanks go to the following people for their contributions to the development
+of MPanel;
+
+Germán Alonso	- MPanel logo (new version)
+		- Spanish (Castellano) language translation
+
++ many other people who have reported bugs, suggested features of generally
+provided emails of thanks and support.
+
+7. License
+----------
+
+MPanel is licensed under the GPL license;
+
+Matt's MySQL Panel - administer MySQL databases remotely
+Copyright (C) 2001 Matt Wilson <matt@mattsscripts.co.uk
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.

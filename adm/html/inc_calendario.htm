@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>Administrador de Calendário - Henrique Cursos</title>
+
+</head>
+<body>
+<table>
+<form action="inclusao.php?id=[var.id]" method="post">
+<tr bgcolor="#F0F0F0"><td colspan="8" align="center">Administração de Calendário</td></tr>
+
+
+<td colspan="1">Local</td>
+<td colspan="1">Endereço</td>
+<td colspan="1">Horário</td>
+<td colspan="1">Dia</td>
+<td colspan="1">Mês</td>
+<td colspan="1">Ano</td>
+<td colspan="1">Link</td>
+<td colspan="1">Inscrições</td>
+
+    <tr bgcolor="#F0F0F0">   
+    <td><div align="left"><input name="local" value=""></div></td>
+    <td><div align="left"><input name="endereco" value=""></div></td>
+    <td><div align="left"><input name="horario" value=""></div></td>
+    <td><div align="left"><input name="dia" value=""></div></td>
+    <td><div align="left"><input name="mes" value=""></div></td>
+    <td><div align="left"><input name="ano" value=""></div></td>
+    <td><div align="left"><input name="link" value=""></div></td>
+    
+    
+    <td><div align="left">
+  
+<optgroup label="inscricoes">
+Sim<input type="radio" name="inscricoes" value="1"><br>
+Não<input type="radio" name="inscricoes" value="0">
+
+
+</optgroup>       
+        
+    </select>
+    </div></td>
+   
+</tr>
+
+    <tr>
+    <td>
+      	<div align="left"><input type="submit"></div>
+    </td>
+     <td>
+      	<div align="left"><button type="button" onClick="javascript:history.go(-1)">Voltar</button></div>
+    </td>
+    </tr>
+</form>
+</table>
+
+</body>
+</html>

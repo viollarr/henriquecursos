@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>Administrador de Calendário - Henrique Cursos</title>
+
+</head>
+<body>
+
+
+
+
+
+
+<table cellpadding="0" cellspacing="2">
+<tr bgcolor="#c0c0c0"><td colspan="10" align="center">Administração de Calendário([bloco1.nome])</td></tr>
+
+<tr bgcolor="#ffffff">   
+    <td><div align="left">Local</div></td>
+	<td><div align="left">Endereço</div></td>
+	<td><div align="left">Horário</div></td>
+    <td><div align="left">Dia<div></td>
+    <td><div align="left">Mês</div></td>
+    <td><div align="left">Ano</div></td>
+    <td><div align="left">Link</div></td>
+    <td><div align="left">Aberto?</div></td>
+    
+   </tr>
+
+
+
+<tr bgcolor="#f0f0f0">
+
+   
+    <td><div align="left">[bloco1.local; block=tr]</div></td>
+	<td><div align="left">[bloco1.endereco]</div></td>
+    <td><div align="left">[bloco1.horario]</div></td>
+    <td><div align="left">[bloco1.dia]</div></td>
+    <td><div align="left">[bloco1.mes]</div></td>
+    <td><div align="left">[bloco1.ano]</div></td>
+    <td><div align="left">[bloco1.link]</div></td>
+    <td><div align="left">[bloco1.inscricoes]</div></td>
+    <td><div align="left"><a href="alt_calendario.php?id=[bloco1.id]">Alterar</div></td>    
+    <!-- <td><div align="left"><a href="excluir.php?id=[bloco1.id]&tipo_id=[bloco1.tipo_id]">Apagar</div></td> -->
+    <td><div align="left"><a href=# onClick="if(confirm('Deseja realmente apagar o registro de [bloco1.nome]?')) { window.location = 'excluir.php?id=[bloco1.id]&tipo_id=[bloco1.tipo_id]'; }" style="cursor: hand">Apagar</div></td>
+   
+   
+</tr>
+
+<tr bgcolor="#dddddd">
+<td colspan="1"><div align="left"><a href="inc_calendario.php?id=[var.id]">Novo Registro</div></td>
+<td colspan="9"><div align="left"><a href="index.php">Voltar</div></td>
+
+</tr>
+
+</table>
+
+</body>
+</html>
