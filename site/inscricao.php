@@ -23,7 +23,7 @@ $(document).ready( function() {
 		rules:{
 			nome:{
 				required: true, 
-				minlength: 10
+				minlength: 3
 			},
 			cpf:{
 				required: true,
@@ -39,7 +39,7 @@ $(document).ready( function() {
 			},
 			rua:{
 				required: true, 
-				minlength: 10
+				minlength: 3
 			},
 			bairro:{
 				required: true, 
@@ -81,7 +81,7 @@ $(document).ready( function() {
 		messages:{
 			nome:{
 				required: "Digite o seu nome",
-				minLength: "O seu nome deve conter, no mínimo, 10 caracteres"
+				minLength: "O seu nome deve conter, no mínimo, 3 caracteres"
 			},
 			cpf:{
 				required: "Digite um cpf válido",
@@ -97,7 +97,7 @@ $(document).ready( function() {
 			},
 			rua:{
 				required: "Digite o nome da rua",
-				minLength: "A sua mensagem deve conter, no mínimo, 10 caracteres"
+				minLength: "A sua mensagem deve conter, no mínimo, 3 caracteres"
 			},
 			bairro:{
 				required: "Digite o nome do bairro",
